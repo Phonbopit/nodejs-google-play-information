@@ -1,8 +1,8 @@
 {
-  "name": "a1",
+  "name": "gp-cli",
   "version": "1.0.0",
-  "description": "JavaScript Crawler",
-  "main": "index.js",
+  "description": "Google Play Information Command Line",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "babel --presets babel-preset-es2015 main.js -o app.js",
