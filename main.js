@@ -20,6 +20,7 @@ app.get('/:appId', (req, res) => {
             let publisher = $('.document-subtitle.primary').text().trim();
             let category = $('.document-subtitle.category').text().trim();
             let score = $('.score-container > .score').text().trim();
+            let install = $('.meta-info > .content').eq(2).text().trim();
             let version = $('.meta-info > .content').eq(3).text().trim();
 
             res.json({
@@ -28,6 +29,7 @@ app.get('/:appId', (req, res) => {
                     publisher: publisher,
                     category: category,
                     score: score,
+                    install: install,
                     version: version
                 }
             });

@@ -17,10 +17,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express2.default)();
 var URL = 'https://play.google.com/store/apps/details?id=';
 
-app.get('/', function (req, res) {
-    res.json({ message: 'OK' });
-});
-
 app.get('/:appId', function (req, res) {
     var appId = req.params.appId;
     var lang = req.query.lang || 'en';
@@ -36,6 +32,7 @@ app.get('/:appId', function (req, res) {
             var publisher = $('.document-subtitle.primary').text().trim();
             var category = $('.document-subtitle.category').text().trim();
             var score = $('.score-container > .score').text().trim();
+            var size = $('.meta-info > .content').eq(2).text().trim();
             var version = $('.meta-info > .content').eq(3).text().trim();
 
             res.json({
@@ -44,6 +41,7 @@ app.get('/:appId', function (req, res) {
                     publisher: publisher,
                     category: category,
                     score: score,
+                    size: size,
                     version: version
                 }
             });
