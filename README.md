@@ -1,7 +1,7 @@
 Get Google Play Information Command Line
 ---
 
-This repo is a demo base on article : [ดึงข้อมูลเว็บไซต์ด้วย Nodejs และ Cheerio](#) (Work in progress)
+This repo is a demo base on article : [ดึงข้อมูลเว็บไซต์ด้วย Nodejs และ Cheerio](http://devahoy.com/posts/scraping-web-with-nodejs/)
 
 
 ## Usage
