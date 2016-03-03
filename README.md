@@ -9,6 +9,9 @@ This repo is a demo base on article : [ดึงข้อมูลเว็บ�
 ```
 npm install
 npm start
+
+# or run development with nodemon
+npm run dev
 ```
 
 
