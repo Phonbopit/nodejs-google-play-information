@@ -5,6 +5,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "engines": {
+    "node": "^4.2.0"
+  },
   "dependencies": {
     "cheerio": "^0.20.0",
     "hapi": "^13.0.0",
